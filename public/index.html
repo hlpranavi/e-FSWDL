@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-container">
+        <h1>Login to Business Game</h1>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="login-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-1" id="desktop1">
+      <div class="desktop-1-child"></div>
+      <div class="group-parent">
+        <img class="group-child" alt="" src="./images/group-10.svg" />
+
+        <div class="group-item"></div>
+        <div class="group-inner"></div>
+      </div>
+      <img class="desktop-1-item" alt="" />
+
+      <b class="e-fswdl">e-FSWDL</b>
+      <img class="desktop-1-inner" alt="" />
+
+      <img class="line-icon" alt="" />
+
+      <img class="desktop-1-child1" alt="" />
+
+      <b class="login-as-faculty" id="lOGINASFACULTY">LOGIN AS FACULTY</b>
+      <b class="login-as-student" id="lOGINASSTUDENT">LOGIN AS STUDENT</b>
+      <img
+        class="front-end-web-development-serv-icon"
+        alt=""
+        src="./images/frontendwebdevelopmentservices-1.svg"
+      />
+    </div>
+
+    <script>
+      var lOGINASFACULTY = document.getElementById("lOGINASFACULTY");
+      if (lOGINASFACULTY) {
+        lOGINASFACULTY.addEventListener("click", function (e) {
+          // Please sync "Desktop - 10" to the project
+          window.location.href = '/fac-login.html';
+        });
+      }
+      
+      var lOGINASSTUDENT = document.getElementById("lOGINASSTUDENT");
+      if (lOGINASSTUDENT) {
+        lOGINASSTUDENT.addEventListener("click", function (e) {
+          // Please sync "Desktop - 11" to the project
+          window.location.href = '/stu-login.html';
+        });
+      }
+
+
+      //no use of this
+      /*var desktop1 = document.getElementById("desktop1");
+      if (desktop1) {
+        desktop1.addEventListener("click", function (e) {
+          // Please sync "Desktop - 2" to the project
+        });
+      } */
+
+
+      </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-lora: Lora;
+  
+    /* font sizes */
+    --font-size-21xl: 40px;
+  
+    /* Colors */
+    --color-black: #000;
+    --color-lightcyan: #d7f0f7;
+  
+    /* Border radiuses */
+    --br-11xl: 30px;
+  }
+  

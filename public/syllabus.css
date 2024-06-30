@@ -1,0 +1,102 @@
+.desktop-3-child {
+    position: absolute;
+    top: 114.5px;
+    left: -0.5px;
+    border-top: 1px solid var(--color-silver);
+    box-sizing: border-box;
+    width: 1441px;
+    height: 1px;
+  }
+  .desktop-3-item {
+    position: absolute;
+    top: 111px;
+    left: 0;
+    background-color: var(--color-lightblue);
+    width: 1440px;
+    height: 86px;
+  }
+  .fswd-l-syllabus1 {
+    position: absolute;
+    top: 128px;
+    left: 524px;
+    font-weight: 500;
+  }
+  .desktop-3-inner {
+    position: absolute;
+    top: 231px;
+    left: 34px;
+    background-color: var(--color-white);
+    width: 1373px;
+    height: 1127px;
+  }
+  .blank-line {
+    margin: 0;
+  }
+  .output-the-position {
+    margin: 0;
+    white-space: pre-wrap;
+  }
+  .task-1-develop-container {
+    position: absolute;
+    top: 207px;
+    left: 62px;
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+    display: inline-block;
+    width: 1335px;
+    height: 1155px;
+  }
+  .desktop-3-child1 {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    background-color: var(--color-white);
+    width: 1407px;
+    height: 73px;
+  }
+  .e-fswdl4 {
+    position: absolute;
+    top: 28px;
+    left: 44px;
+    font-family: var(--font-inter);
+    cursor: pointer;
+  }
+  .desktop-3-child2 {
+    position: absolute;
+    top: 39px;
+    left: 258px;
+    border-radius: var(--br-8xs);
+    width: 26.8px;
+    height: 26.9px;
+    object-fit: contain;
+  }
+  .syllabus {
+    position: absolute;
+    top: 26px;
+    left: 319px;
+  }
+  .desktop-3-child3,
+  .desktop-3-child4 {
+    position: absolute;
+    top: 1431px;
+    left: 0;
+    background-color: var(--color-steelblue);
+    width: 1440px;
+    height: 33px;
+  }
+  .desktop-3-child4 {
+    top: 192px;
+    height: 15px;
+  }
+  .desktop-3 {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    height: 1464px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-21xl);
+    color: var(--color-black);
+    font-family: var(--font-lora);
+  }
+  

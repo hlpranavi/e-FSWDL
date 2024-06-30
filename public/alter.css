@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-lightblue);
+    color: var(--color-black);
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-blues);
+}
+
+
+#marksForm {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid var(--color-steelblue); /* Adding border */
+    border-radius: 8px;
+}
+
+#marksForm label {
+    text-align: right;
+    padding-right: 10px;
+}
+
+#marksForm input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+#marksForm button[type="submit"] {
+    background-color: var(--color-steelblue);
+    color: var(--color-white);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+#marksForm input[type="text"]:hover,
+#marksForm input[type="number"]:hover {
+    background-color: rgb(213, 237, 244); /* Change background color to pink on hover */
+}
+th, td {
+    border: 1px solid var(--color-steelblue);
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--color-white);
+    color: var(--color-white);
+}
+#marksForm button[type="submit"]:hover {
+    background-color: var(--color-darksteelblue); /* Darker shade of steel blue on hover */
+}

@@ -1,0 +1,197 @@
+.desktop-12-child {
+    position: absolute;
+    top: 114.5px;
+    left: -0.5px;
+    border-top: 1px solid var(--color-silver);
+    box-sizing: border-box;
+    width: 1441px;
+    height: 1px;
+  }
+  .e-fswdl5 {
+    position: absolute;
+    top: 35px;
+    left: 34px;
+    font-size: var(--font-size-21xl);
+    font-family: var(--font-inter);
+    color: var(--color-black);
+  }
+  .desktop-12-item {
+    position: absolute;
+    top: 46px;
+    left: 248px;
+    border-radius: var(--br-8xs);
+    width: 26.8px;
+    height: 26.9px;
+    object-fit: contain;
+  }
+  .desktop-12-inner {
+    position: absolute;
+    top: 115px;
+    left: 0;
+    background-color: var(--color-lightblue);
+    width: 1440px;
+    height: 49px;
+  }
+  .dashboard1 {
+    position: absolute;
+    top: 115px;
+    left: 649px;
+    font-size: var(--font-size-16xl);
+    font-weight: 500;
+    color: var(--color-black);
+  }
+  .desktop-12-child1 {
+    position: absolute;
+    top: 209px;
+    left: 385px;
+    border-radius: var(--br-11xl);
+    background-color: var(--color-lightblue);
+    width: 679px;
+    height: 67px;
+  }
+  .p2,
+  .welcome-to-fswd-lab1 {
+    margin: 0;
+  }
+  .p2 {
+    white-space: pre-wrap;
+  }
+  .welcome-to-fswd-lab-container1 {
+    position: absolute;
+    top: 219px;
+    left: calc(50% - 334px);
+    font-size: var(--font-size-21xl);
+    font-weight: 500;
+    color: var(--color-black);
+    text-align: center;
+    display: inline-block;
+    width: 698px;
+    height: 69px;
+  }
+  .desktop-12-child3 {
+    position: absolute;
+    top: 388px;
+    left: 173px;
+    border-radius: var(--br-xl);
+    width: 316px;
+    height: 114px;
+    cursor: pointer;
+  }
+  .desktop-12-child4,
+  .desktop-12-child5,
+  .desktop-12-child6,
+  .desktop-12-child7,
+  .desktop-12-child8 {
+    position: absolute;
+    top: 388px;
+    left: 577px;
+    border-radius: var(--br-xl);
+    width: 316px;
+    height: 114px;
+    cursor: pointer;
+  }
+  .desktop-12-child5,
+  .desktop-12-child6,
+  .desktop-12-child7,
+  .desktop-12-child8 {
+    top: 382px;
+    left: 981px;
+  }
+  .desktop-12-child6,
+  .desktop-12-child7,
+  .desktop-12-child8 {
+    top: 596px;
+    left: 173px;
+  }
+  .desktop-12-child7,
+  .desktop-12-child8 {
+    left: 577px;
+  }
+  .desktop-12-child8 {
+    top: 590px;
+    left: 981px;
+  }
+  .cse-a1 {
+    position: absolute;
+    top: 413px;
+    left: 246px;
+    font-weight: 500;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .cse-b1,
+  .cse-c1,
+  .cse-d1,
+  .cse-e1,
+  .cse-f1 {
+    position: absolute;
+    top: 413px;
+    left: 665px;
+    font-weight: 500;
+  }
+  .cse-c1,
+  .cse-d1,
+  .cse-e1,
+  .cse-f1 {
+    top: 621px;
+    left: 656px;
+  }
+  .cse-c1,
+  .cse-d1,
+  .cse-f1 {
+    top: 620px;
+    left: 1064px;
+  }
+  .cse-c1,
+  .cse-d1 {
+    top: 621px;
+    left: 237px;
+  }
+  .cse-c1 {
+    top: 407px;
+    left: 1067px;
+  }
+  .desktop-12-child10,
+  .desktop-12-child9 {
+    position: absolute;
+    top: 804px;
+    left: 264px;
+    border-radius: var(--br-xl);
+    width: 450px;
+    height: 114px;
+    cursor: pointer;
+  }
+  .desktop-12-child10 {
+    left: 796px;
+  }
+  .enter-marks,
+  .fswd-l-syllabus2 {
+    position: absolute;
+    top: 835px;
+    left: 289px;
+    font-size: var(--font-size-21xl);
+    font-weight: 500;
+  }
+  .enter-marks {
+    left: 893px;
+  }
+  .log-out1 {
+    position: absolute;
+    top: 46px;
+    left: 1297px;
+    font-size: var(--font-size-xl);
+    color: var(--color-black);
+    text-align: center;
+    cursor: pointer;
+  }
+  .desktop-12 {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-31xl);
+    color: var(--color-white);
+    font-family: var(--font-lora);
+  }
+  

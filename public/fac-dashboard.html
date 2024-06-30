@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global2.css" />
+    <link rel="stylesheet" href="./fac-dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <script>
+      // this is used to check if the user is logged in or not
+      document.addEventListener("DOMContentLoaded", function() {
+        // Check if the user is logged in
+        fetch('/loggedin-not')
+            .then(response => {
+                if (response.ok) {
+                    // User is logged in, allow access to the syllabus page
+                    console.log('User is logged in');
+                } else {
+                    // User is not logged in, redirect to index page
+                    console.log('User is not logged in');
+                    window.location.href = './index.html';
+                }
+            })
+            .catch(error => {
+                console.error('Error checking user login status:', error);
+                // Redirect to index page in case of error
+                window.location.href = './index.html';
+            });
+    });    
+    </script>
+    <div class="desktop-12">
+      <div class="desktop-12-child"></div>
+      <div class="e-fswdl5">e-FSWDL</div>
+      <img class="desktop-12-item" alt="" src="./images/line-41.svg" />
+
+      <div class="desktop-12-inner"></div>
+      <div class="dashboard1">DASHBOARD</div>
+      <div class="desktop-12-child1"></div>
+      <div class="desktop-12-child1"></div>
+      <div class="welcome-to-fswd-lab-container1">
+        <p class="welcome-to-fswd-lab1">WELCOME TO FSWD-LAB</p>
+        <p class="p2"></p>
+      </div>
+      <img
+        class="desktop-12-child3"
+        alt=""
+        src="./images/rectangle-37.svg"
+        id="rectangle3"
+      />
+
+      <img
+        class="desktop-12-child4"
+        alt=""
+        src="./images/rectangle-38.svg"
+        id="rectangle4"
+      />
+
+      <img
+        class="desktop-12-child5"
+        alt=""
+        src="./images/rectangle-38.svg"
+        id="rectangle5"
+      />
+
+      <img
+        class="desktop-12-child6"
+        alt=""
+        src="./images/rectangle-38.svg"
+        id="rectangle6"
+      />
+
+      <img
+        class="desktop-12-child7"
+        alt=""
+        src="./images/rectangle-38.svg"
+        id="rectangle7"
+      />
+
+      <img
+        class="desktop-12-child8"
+        alt=""
+        src="./images/rectangle-38.svg"
+        id="rectangle8"
+      />
+
+      <div class="cse-a1">CSE A</div>
+      <div class="cse-b1">CSE B</div>
+      <div class="cse-e1">CSE E</div>
+      <div class="cse-f1">CSE F</div>
+      <div class="cse-d1">CSE D</div>
+      <div class="cse-c1">CSE C</div>
+      <img
+        class="desktop-12-child9"
+        alt=""
+        src="./images/rectangle-43.svg"
+        id="rectangle9"
+      />
+
+      <img
+        class="desktop-12-child10"
+        alt=""
+        src="./images/rectangle-43.svg"
+        id="rectangle10"
+      />
+
+      <div class="fswd-l-syllabus2">FSWD-L SYLLABUS</div>
+      <div class="enter-marks">ENTER MARKS</div>
+      <b class="log-out1" id="lOGOUTText">LOG OUT</b>
+    </div>
+
+    <script>
+      var rectangle3 = document.getElementById("rectangle3");
+      if (rectangle3) {
+        rectangle3.addEventListener("click", function (e) {
+          window.location.href = "./cse-a.html";
+        });
+      }
+      
+      var rectangle4 = document.getElementById("rectangle4");
+      if (rectangle4) {
+        rectangle4.addEventListener("click", function (e) {
+          // Please sync "Desktop - 5" to the project
+        });
+      }
+      
+      var rectangle5 = document.getElementById("rectangle5");
+      if (rectangle5) {
+        rectangle5.addEventListener("click", function (e) {
+          // Please sync "Desktop - 6" to the project
+        });
+      }
+      
+      var rectangle6 = document.getElementById("rectangle6");
+      if (rectangle6) {
+        rectangle6.addEventListener("click", function (e) {
+          // Please sync "Desktop - 7" to the project
+        });
+      }
+      
+      var rectangle7 = document.getElementById("rectangle7");
+      if (rectangle7) {
+        rectangle7.addEventListener("click", function (e) {
+          // Please sync "Desktop - 8" to the project
+        });
+      }
+      
+      var rectangle8 = document.getElementById("rectangle8");
+      if (rectangle8) {
+        rectangle8.addEventListener("click", function (e) {
+          // Please sync "Desktop - 9" to the project
+        });
+      }
+      //this is the syllabus thing
+      var rectangle9 = document.getElementById("rectangle9");
+      if (rectangle9) {
+        rectangle9.addEventListener("click", function (e) {
+          window.location.href = "./syllabus.html"; 
+        });
+      }
+      // enter marks
+      var rectangle10 = document.getElementById("rectangle10");
+      if (rectangle10) {
+        rectangle10.addEventListener("click", function (e) {
+          window.location.href = "./enterMarks";
+        });
+      }    
+
+
+      var lOGOUTText = document.getElementById("lOGOUTText");
+      if (lOGOUTText) {
+        lOGOUTText.addEventListener("click", function (e) {
+          location.href = "./logout";
+        });
+      }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+.desktop-10-child {
+    position: absolute;
+    top: 114.5px;
+    left: -0.5px;
+    border-top: 1px solid #c9bdbd;
+    box-sizing: border-box;
+    width: 1441px;
+    height: 1px;
+  }
+  .desktop-10-inner,
+  .desktop-10-item {
+    position: absolute;
+    top: 41px;
+    left: 255px;
+    border-radius: var(--br-8xs);
+    width: 26.8px;
+    height: 26.9px;
+    object-fit: contain;
+  }
+  .desktop-10-inner {
+    top: 42px;
+    left: 693px;
+  }
+  .frame-div {
+    position: absolute;
+    top: 930px;
+    left: 823px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+  }
+  .e-fswdl1,
+  .login-as-faculty1 {
+    position: absolute;
+    color: var(--color-white);
+    display: inline-block;
+  }
+  .e-fswdl1 {
+    top: 32px;
+    left: 32px;
+    font-family: var(--font-inter);
+    text-align: left;
+    width: 197px;
+    height: 63px;
+  }
+  .login-as-faculty1 {
+    top: 31px;
+    left: 193px;
+    font-weight: 500;
+    width: 602px;
+    height: 55px;
+  }
+  .cse-blog-1-icon {
+    position: absolute;
+    top: 115px;
+    left: 0;
+    width: 1440px;
+    height: 909px;
+    object-fit: cover;
+    opacity: 0.2;
+  }
+  .desktop-10-child1 {
+    position: absolute;
+    top: 782px;
+    left: 503px;
+    border-radius: var(--br-11xl);
+    background-color: var(--color-lightcyan-100);
+    width: 350px;
+    height: 91px;
+  }
+  .login {
+    position: absolute;
+    top: 802px;
+    left: 584px;
+    font-weight: 500;
+    display: inline-block;
+    width: 208px;
+    cursor: pointer;
+  }
+  .desktop-10-child2 {
+    position: absolute;
+    top: 265px;
+    left: 340px;
+    border-radius: 50px;
+    background-color: #d7f1f7;
+    width: 706px;
+    height: 360px;
+  }
+  .desktop-10-child3 {
+    position: absolute;
+    top: 298px;
+    left: 587px;
+    border-radius: var(--br-11xl);
+    background-color: #94cddb;
+    width: 216px;
+    height: 68px;
+  }
+  .faculty-id,
+  .login1,
+  .password {
+    position: absolute;
+    top: 524px;
+    left: 360px;
+    font-weight: 500;
+    display: inline-block;
+    width: 263px;
+  }
+  .faculty-id,
+  .login1 {
+    top: 411px;
+  }
+  .login1 {
+    top: 306px;
+    left: 584px;
+    width: 208px;
+  }
+  .desktop-10-child4,
+  .line-div {
+    position: absolute;
+    top: 461.5px;
+    left: 649.5px;
+    border-top: 1px solid var(--color-black);
+    box-sizing: border-box;
+    width: 331px;
+    height: 1px;
+  }
+  .desktop-10-child4 {
+    top: 574.5px;
+  }
+  .desktop-10 {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-steelblue);
+    height: 1024px;
+    overflow: hidden;
+    text-align: center;
+    font-size: var(--font-size-21xl);
+    color: var(--color-black);
+    font-family: var(--font-lora);
+  }
+  #login-form input {
+    width: 400px; /* Adjusted width for more space */
+    padding: 12px; /* Padding remains the same */
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    
+}    
+/* Hover effect */
+#login-form input:hover {
+    border-color: #555;
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-lora: Lora;
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-21xl: 40px;
+
+  /* Colors */
+  --color-steelblue: #26547c;
+  --color-black: #000;
+  --color-lightcyan-100: #d7f0f7;
+  --color-white: #fff;
+
+  /* Border radiuses */
+  --br-11xl: 30px;
+  --br-8xs: 5px;
+}
+.faculty-id,.password {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.faculty-id label,.password label {
+  margin-right: 10px;
+}
+
+.faculty-id input,.password input {
+  width: 200px;
+}
+  
+  
+
+  

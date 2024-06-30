@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Marks</title>
+    <link rel="stylesheet" href="./global2.css" />
+    <style>
+        /* CSS styling for Update Marks form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--color-lightblue); /* Using light blue background color */
+            color: var(--color-black); /* Using black text color */
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--color-steelblue); /* Using steel blue h1 color */
+        }
+
+        #marksContainer {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: var(--color-white); /* Using white background color */
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #marksForm {
+            display: grid;
+            grid-template-columns: auto auto; /* Two columns */
+            gap: 10px; /* Gap between columns */
+            max-width: 400px; /* Adjust as needed */
+            margin: 0 auto; /* Center the form */
+        }
+
+        #marksForm label {
+            text-align: right;
+            padding-right: 10px; /* Adjust as needed */
+        }   
+
+        #marksForm input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: var(--color-steelblue); /* Using steel blue background color for the button */
+            color: var(--color-white); /* Using white text color for the button */
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: var(--color-darksteelblue); /* Darker shade of steel blue on hover */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--color-lightblue);
+            color: var(--color-black);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--color-steelblue);
+        }
+
+        #marksContainer {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: var(--color-white);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid var(--color-steelblue);
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: var(--color-steelblue);
+            color: var(--color-white);
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Marks</h1>
+    <div id="marksContainer"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('/getMarks');
+                if (response.ok) {
+                    const user = await response.json();
+                    const marksContainer = document.getElementById('marksContainer');
+
+                    marksContainer.innerHTML = `
+                        <p><span>Roll Number:</span> ${user["Roll No"]}</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Criteria</th>
+                                    <th>Marks Obtained</th>
+                                    <th>Total Marks</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Attendance</td>
+                                    <td>${user.Attendance}</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Assignments</td>
+                                    <td>${user.Assignments}</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>GLOB</td>
+                                    <td>${user.GLOB}</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Viva</td>
+                                    <td>${user.Viva}</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Internal Theory</td>
+                                    <td>${user["Internal Theory"]}</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Total</strong></td>
+                                    <td><strong>${user.Total}</strong></td>
+                                    <td><strong>40</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    `;
+                } else {
+                    alert('Failed to retrieve marks.');
+                    window.location.href= "./index.html";
+                }
+            } catch (error) {
+                console.error('Error fetching marks:', error);
+            }
+        });
+    </script>
+</body>
+</html>

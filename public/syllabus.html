@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global2.css" />
+    <link rel="stylesheet" href="./syllabus.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <script>
+      // this is used to check if the user is logged in or not
+      document.addEventListener("DOMContentLoaded", function() {
+        // Check if the user is logged in
+        fetch('/loggedin-not')
+            .then(response => {
+                if (response.ok) {
+                    // User is logged in, allow access to the syllabus page
+                    console.log('User is logged in');
+                } else {
+                    // User is not logged in, redirect to index page
+                    console.log('User is not logged in');
+                    window.location.href = './index.html';
+                }
+            })
+            .catch(error => {
+                console.error('Error checking user login status:', error);
+                // Redirect to index page in case of error
+                window.location.href = './index.html';
+            });
+    });
+    
+    </script>
+    <div class="desktop-3">
+      <div class="desktop-3-child"></div>
+      <div class="desktop-3-item"></div>
+      <div class="fswd-l-syllabus1">FSWD-L SYLLABUS</div>
+      <div class="desktop-3-inner"></div>
+      <div class="task-1-develop-container">
+        <p class="blank-line">&nbsp;</p>
+        <p class="blank-line">TASK-1 :</p>
+        <p class="blank-line">
+          Develop a website by implementing JavaScript functions for the
+          following
+        </p>
+        <p class="blank-line">Parameter: A string</p>
+        <p class="output-the-position">
+          Output: The position in the string of the left-most vowel 
+        </p>
+        <p class="output-the-position"></p>
+        <p class="blank-line">TASK-2 :</p>
+        <p class="blank-line">
+          Write a JavaScript program to calculate the squares and cubes of the
+          numbers from 0 to 10 and outputs HTML text that displays the
+        </p>
+        <p class="blank-line">resulting values in an HTML table format.</p>
+        <p class="blank-line">&nbsp;</p>
+        <p class="blank-line">TASK-3 :</p>
+        <p class="blank-line">
+          Write a JavaScript program to display text “TEXT-GROWING” with
+          increasing font size in the interval of 100ms in RED COLOR, when
+        </p>
+        <p class="blank-line">
+          the font size reaches 50pt it displays “TEXT SHRINKING” in BLUE
+          colour. Then the font size decreases to 5pt.
+        </p>
+        <p class="blank-line">&nbsp;</p>
+        <p class="blank-line">TASK-4 :</p>
+        <p class="blank-line">
+          Write a JavaScript program to design a simple calculator to perform
+          the following operations: sum, product, difference and quotient.
+        </p>
+        <p class="blank-line">&nbsp;</p>
+        <p class="blank-line">TASK-5 :</p>
+        <p class="blank-line">
+          Write a JavaScript program to design a simple calculator to perform
+          the following operations: Modulus.
+        </p>
+        <p class="blank-line">&nbsp;</p>
+        <p class="blank-line">TASK-6 :</p>
+        <p class="blank-line">
+          Write a JavaScript program to design a simple calculator to perform
+          the following operations: Xampp.
+        </p>
+        <p class="blank-line">&nbsp;</p>
+        <p class="blank-line">TASK-7 :</p>
+        <p class="blank-line">
+          Write a J-Query AJAX program to request data from the server with an
+          HTTP.
+        </p>
+        <p class="blank-line">&nbsp;</p>
+        <p class="blank-line">TASK-8 :</p>
+        <p class="blank-line">Write PHP programs to do the following tasks:</p>
+        <p class="blank-line">a. Implement simple calculator operations.</p>
+        <p class="blank-line">b. Find the transpose of a matrix.</p>
+        <p class="blank-line">&nbsp;</p>
+        <p class="blank-line">TASK-9 :</p>
+        <p class="blank-line">Write PHP programs to do the following tasks:</p>
+        <p class="blank-line">
+          c. Multiplication of two matrices. d. Addition of two matrices.
+        </p>
+        <p class="blank-line">&nbsp;</p>
+        <p class="blank-line">TASK-10 :</p>
+        <p class="blank-line">Write a PHP program</p>
+        <p class="blank-line">&nbsp;</p>
+        <p class="blank-line">TASK-11 :</p>
+        <p class="blank-line">Write a General JavaScript program.</p>
+        <p class="blank-line">&nbsp;</p>
+        <p class="blank-line">TASK-12 :</p>
+        <p class="blank-line">
+          Write a AJAX Program to implement squares and cubes of certain numbers
+          in a table with designs.
+        </p>
+      </div>
+      <div class="desktop-3-child1"></div>
+      <div class="e-fswdl4" id="eFSWDLText">e-FSWDL</div>
+      <img class="desktop-3-child2" alt="" src="./images/line-41.svg" />
+
+      <div class="syllabus">Syllabus</div>
+      <div class="desktop-3-child3"></div>
+      <div class="desktop-3-child4"></div>
+    </div>
+
+    <!-- <script>
+      var eFSWDLText = document.getElementById("eFSWDLText");
+      if (eFSWDLText) {
+        eFSWDLText.addEventListener("click", function (e) {
+          window.location.href = "./index.html"; // change the logic here to being logged in, they going to dashboard and acc to fac or student or create 2 pages for syllabus (which is easier for us)
+        });
+      }
+      </script> -->
+  </body>
+</html>

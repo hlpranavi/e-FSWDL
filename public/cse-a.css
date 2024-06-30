@@ -1,0 +1,118 @@
+.desktop-4-child {
+    position: absolute;
+    top: 114.5px;
+    left: -0.5px;
+    border-top: 1px solid var(--color-silver);
+    box-sizing: border-box;
+    width: 1441px;
+    height: 1px;
+  }
+  .e-fswdl6 {
+    position: absolute;
+    top: 35px;
+    left: 34px;
+    font-size: var(--font-size-21xl);
+    font-family: var(--font-inter);
+    cursor: pointer;
+  }
+  .desktop-4-item {
+    position: absolute;
+    top: 46px;
+    left: 248px;
+    border-radius: var(--br-8xs);
+    width: 26.8px;
+    height: 26.9px;
+    object-fit: contain;
+  }
+  .cse-a2 {
+    position: absolute;
+    top: 44px;
+    left: 319px;
+  }
+  .desktop-4-child1,
+  .desktop-4-inner {
+    position: absolute;
+    top: 839px;
+    left: 0;
+    background-color: var(--color-lightblue);
+    width: 1440px;
+    height: 49px;
+  }
+  .desktop-4-child1 {
+    top: 115px;
+  }
+  .course-schedule {
+    position: absolute;
+    top: 843px;
+    left: 104px;
+    font-size: var(--font-size-16xl);
+    font-weight: 500;
+  }
+  .p3 {
+    font-size: var(--font-size-11xl);
+    font-weight: 500;
+    white-space: pre-wrap;
+  }
+  .p3,
+  .week-3-holiday {
+    margin: 0;
+  }
+  .week-1-task-1-container {
+    position: absolute;
+    top: 883px;
+    left: 109px;
+    display: inline-block;
+    width: 497px;
+    height: 708px;
+  }
+  .timetable {
+    position: absolute;
+    top: 115px;
+    left: 77px;
+    font-size: var(--font-size-16xl);
+    font-weight: 500;
+  }
+  .whatsapp-image-2024-05-13-at-2 {
+    position: absolute;
+    top: 182px;
+    left: 67px;
+    width: 1280px;
+    height: 657px;
+    object-fit: cover;
+  }
+  .desktop-4-child2 {
+    position: absolute;
+    top: 1635px;
+    left: 0;
+    width: 1440px;
+    height: 191px;
+  }
+  .faculty-coordinators-container,
+  .lab-2-container {
+    position: absolute;
+    top: 1687px;
+    left: 807px;
+    font-size: var(--font-size-11xl);
+    font-weight: 500;
+    display: inline-block;
+    width: 609px;
+    height: 119px;
+  }
+  .faculty-coordinators-container {
+    top: 1649px;
+    left: 97px;
+    width: 596px;
+    height: 163px;
+  }
+  .desktop-4 {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    height: 1826px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-6xl);
+    color: var(--color-black);
+    font-family: var(--font-lora);
+  }
+  

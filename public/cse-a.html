@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global4.css" />
+    <link rel="stylesheet" href="./cse-a.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <script>
+      // this is used to check if the user is logged in or not
+      document.addEventListener("DOMContentLoaded", function() {
+        // Check if the user is logged in
+        fetch('/loggedin-not')
+            .then(response => {
+                if (response.ok) {
+                    // User is logged in, allow access to the syllabus page
+                    console.log('User is logged in');
+                } else {
+                    // User is not logged in, redirect to index page
+                    console.log('User is not logged in');
+                    window.location.href = './index.html';
+                }
+            })
+            .catch(error => {
+                console.error('Error checking user login status:', error);
+                // Redirect to index page in case of error
+                window.location.href = './index.html';
+            });
+    });    
+    </script>
+    <div class="desktop-4">
+      <div class="desktop-4-child"></div>
+      <div class="e-fswdl6" id="eFSWDLText">e-FSWDL</div>
+      <img class="desktop-4-item" alt="" src="./images/line-41.svg" />
+
+      <div class="cse-a2">CSE- A</div>
+      <div class="desktop-4-inner"></div>
+      <div class="desktop-4-child1"></div>
+      <div class="course-schedule">COURSE SCHEDULE</div>
+      <div class="week-1-task-1-container">
+        <p class="p3"></p>
+        <p class="week-3-holiday"><br>WEEK-1: TASK 1, TASK2</p>
+        <p class="week-3-holiday">&nbsp;</p>
+        <p class="week-3-holiday">WEEK-2: TASK 3</p>
+        <p class="week-3-holiday">&nbsp;</p>
+        <p class="week-3-holiday">WEEK-3: HOLIDAY</p>
+        <p class="week-3-holiday">&nbsp;</p>
+        <p class="week-3-holiday">WEEK-4: TASK 4, TASK 5</p>
+        <p class="week-3-holiday">&nbsp;</p>
+        <p class="week-3-holiday">WEEK-5: TASK 6</p>
+        <p class="week-3-holiday">&nbsp;</p>
+        <p class="week-3-holiday">WEEK-6: INTERNAL ASSESSMENT - 1</p>
+        <p class="week-3-holiday">&nbsp;</p>
+        <p class="week-3-holiday">WEEK-7: TASK 7, TASK 8</p>
+        <p class="week-3-holiday">&nbsp;</p>
+        <p class="week-3-holiday">WEEK-8: TASK 9,TASK 10</p>
+        <p class="week-3-holiday">&nbsp;</p>
+        <p class="week-3-holiday">WEEK-9: TASK 11</p>
+        <p class="week-3-holiday">&nbsp;</p>
+        <p class="week-3-holiday">WEEK-10: TASK 12</p>
+        <p class="week-3-holiday">&nbsp;</p>
+        <p class="week-3-holiday">WEEK-11: EXTERNAL ASSESSMENT</p>
+      </div>
+      <div class="timetable">TIMETABLE</div>
+      <img
+        class="whatsapp-image-2024-05-13-at-2"
+        alt=""
+        src="./images/whatsapp-image-20240513-at-2009-1@2x.svg"
+      />
+
+      <img class="desktop-4-child2" alt="" src="./images/rectangle-55.svg" />
+
+      <div class="lab-2-container">
+        <p class="week-3-holiday">LAB - 2 :</p>
+        <p class="week-3-holiday">BATCH-1 : V.BHOOMI</p>
+        <p class="week-3-holiday">BATCH-2 : G.GAYATRI</p>
+      </div>
+      <div class="faculty-coordinators-container">
+        <p class="week-3-holiday">FACULTY COORDINATORS :</p>
+        <p class="week-3-holiday">LAB - 1 :</p>
+        <p class="week-3-holiday">BATCH-1 : B.RADHA</p>
+        <p class="week-3-holiday">BATCH-2 : G.MADHU</p>
+      </div>
+    </div>
+
+    <!-- <script>
+      var eFSWDLText = document.getElementById("eFSWDLText");
+      if (eFSWDLText) {
+        eFSWDLText.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+      </script> -->
+  </body>
+</html>

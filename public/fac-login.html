@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="global10.css" />
+    <link rel="stylesheet" href="fac-login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    
+    <div class="desktop-10">
+      <div class="desktop-10-child"></div>
+      <img class="desktop-10-item" alt="" src="./images/line-4.svg" />
+
+      <img class="desktop-10-inner" alt="" src="./images/line-4.svg" />
+
+      <div class="frame-div"></div>
+      <div class="e-fswdl1">e-FSWDL</div>
+      <div class="login-as-faculty1">LOGIN AS FACULTY</div>
+      <img class="cse-blog-1-icon" alt="" src="./images/back.jpg" />
+
+      <div class="rectangle-div"></div>
+         
+      <div class="desktop-10-child1"></div>
+      
+      <div class="desktop-10-child2"></div>
+      <div class="desktop-10-child3"></div>
+      
+      <form id="login-form" action="http://localhost:3000/loginstudent" method="POST">
+        <!-- Hide the submit button -->
+        <button type="submit" id="login-button" style="display: none;">LOGIN</button>
+        <div class="login" id="lOGINText" onclick="document.getElementById('login-button').click();">
+            LOG-IN
+        </div>
+
+        <div class="login1">LOGIN</div>
+        <div class="faculty-id">
+          <label for="username">FACULTY_ID: </label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="password">
+          <label for="password">PASSWORD: </label>
+          <input type="password" id="password" name="password" required>
+        </div>
+      </form>
+
+      <!-- Display login message -->
+      <div id="login-message"></div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Add event listener to handle form submission
+        document.getElementById('login-form').addEventListener('submit', async function(event) {
+          event.preventDefault();
+
+          const username = document.getElementById('username').value;
+          const password = document.getElementById('password').value;
+
+          try {
+            const response = await fetch('http://localhost:3000/loginfac', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({ username, password })
+            });
+
+            if (response.ok) {
+              const message = await response.text();
+              document.getElementById('login-message').textContent = message;
+              //alert('You are welcome here!');
+              // Redirect to another page after successful login
+               window.location.href = '/fac-dashboard.html'; 
+            } else {
+              const errorMessage = await response.text();
+              document.getElementById('login-message').textContent = errorMessage;
+            }
+          } catch (error) {
+            console.error('Error during login:', error);
+            document.getElementById('login-message').textContent = 'An error occurred during login';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+.desktop-1-child {
+  position: absolute;
+  top: 930px;
+  left: 823px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  color: #000;
+}
+
+.group-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 757px;
+  height: 1030px;
+  color: #000;
+}
+
+.group-inner,
+.group-item {
+  position: absolute;
+  top: 319px;
+  left: 186px;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-lightcyan);
+  width: 456px;
+  height: 115px;
+  color: #000;
+}
+
+.group-inner {
+  top: 606px;
+  left: 184px;
+}
+
+.desktop-1-item,
+.group-parent {
+  position: absolute;
+  top: 0;
+  left: 688px;
+  width: 757px;
+  height: 1030px;
+  color: #000;
+}
+
+.desktop-1-item {
+  width: 2px;
+  height: 1024px;
+  object-fit: contain;
+  color: #000;
+}
+
+.e-fswdl {
+  position: absolute;
+  top: 111px;
+  left: 887px;
+  font-size: 64px;
+  display: inline-block;
+  width: 425px;
+  height: 93px;
+  color: #000;
+}
+
+.desktop-1-child1,
+.desktop-1-inner,
+.line-icon {
+  position: absolute;
+  top: 240px;
+  left: 820px;
+  width: 565px;
+  height: 2.1px;
+  object-fit: contain;
+  mix-blend-mode: normal;
+  color: #000;
+}
+
+.desktop-1-child1,
+.line-icon {
+  top: 795px;
+  left: 818px;
+  color: #000;
+}
+
+.desktop-1-child1 {
+  top: 515px;
+  left: 820px;
+  color: #000;
+}
+
+.login-as-faculty,
+.login-as-student {
+  position: absolute;
+  top: 349px;
+  left: 890px;
+  display: inline-block;
+  width: 419px;
+  height: 59px;
+  cursor: pointer;
+  color: #000;
+}
+
+.login-as-student {
+  top: 639px;
+  left: 887px;
+  color: #000;
+}
+
+.front-end-web-development-serv-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 688px;
+  height: 1024px;
+  overflow: hidden;
+  color: #000;
+}
+
+.desktop-1 {
+  width: 100%;
+  position: relative;
+  background-color: #26547c;
+  height: 1024px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+  font-family: var(--font-lora);
+}

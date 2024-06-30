@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Marks</title>
+    <link rel="stylesheet" href="./global2.css" />
+    <link rel="stylesheet" href="./alter.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--color-lightblue);
+            color: var(--color-black);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--color-steelblue);
+        }
+
+        #marksContainer {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: var(--color-white);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid var(--color-silver);
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: var(--color-steelblue);
+            color: var(--color-white);
+        }
+    </style>
+</head>
+<body>
+   
+
+    <script>
+       /* document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('/saveMarks');
+                if (!response.ok) {
+                    alert('You are not logged in.');
+                    window.location.href = '/';
+                    return;
+                }
+        
+                const user = await response.json();
+                
+                // Example: Display a message or perform actions based on user data
+                if (user.type === 'faculty') {
+                    // You can add more logic here if needed
+                    document.getElementById('welcomeMessage').textContent = `Welcome, ${user.name || 'Faculty'}!`;
+                } else {
+                    alert('You are not authorized to view this page.');
+                    window.location.href = '/';
+                }
+            } catch (error) {
+                console.error('Error checking user type:', error);
+            }
+        });   */   
+        document.addEventListener("DOMContentLoaded", function() {
+            // Check if the user is logged in
+            fetch('/saveMarks')
+                .then(response => {
+                    if (response.ok) {
+                        // User is logged in, allow access to the syllabus page
+                        console.log('User is logged in');
+                    } else {
+                        // User is not logged in, redirect to index page
+                        console.log('User is not logged in');
+                        window.location.href = './index.html';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error checking user login status:', error);
+                    // Redirect to index page in case of error
+                    window.location.href = './index.html';
+                });
+        }); 
+
+    </script>
+    <h1>Update students marks</h1>
+    <form id="marksForm">
+        <table>
+            <tr>
+                <td><label for="rollNo">Roll No:</label></td>
+                <td><input type="text" id="rollNo" name="rollNo" required></td>
+            </tr>
+            <tr>
+                <td><label for="attendance">Attendance:</label></td>
+                <td><input type="number" id="attendance" name="attendance" max = "5" required></td>
+            </tr>
+            <tr>
+                <td><label for="assignments">Assignments:</label></td>
+                <td><input type="number" id="assignments" name="assignments"  max = "5" required></td>
+            </tr>
+            <tr>
+                <td><label for="glob">GLOB:</label></td>
+                <td><input type="number" id="glob" name="glob" max = "5" required></td>
+            </tr>
+            <tr>
+                <td><label for="viva">Viva:</label></td>
+                <td><input type="number" id="viva" name="viva"  max = "5" required></td>
+            </tr>
+            <tr>
+                <td><label for="internalTheory">Internal Theory:</label></td>
+                <td><input type="number" id="internalTheory" name="internalTheory"  max = "20" required></td>
+            </tr>
+            
+            <tr>
+                <td><label for="total">Total:</label></td>
+                <td><input type="number" id="total" name="total" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">Update Marks</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        // JavaScript remains the same
+
+        
+        document.getElementById('marksForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const rollNo = document.getElementById('rollNo').value;
+            const attendance = parseInt(document.getElementById('attendance').value);
+            const assignments = parseInt(document.getElementById('assignments').value);
+            const glob = parseInt(document.getElementById('glob').value);
+            const viva = parseInt(document.getElementById('viva').value);
+            const internalTheory = parseInt(document.getElementById('internalTheory').value);
+
+            const total = attendance + assignments + glob + viva + internalTheory;
+            document.getElementById('total').value = total;
+
+            try {
+                const response = await fetch('/updateMarks', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ rollNo, attendance, assignments, glob, viva, internalTheory, total })
+                });
+
+                if (response.ok) {
+                    alert('Marks updated successfully');
+                } else {
+                    alert('Failed to update marks');
+                }
+            } catch (error) {
+                console.error('Error updating marks:', error);
+                alert('Error updating marks');
+            }
+        });
+    </script>
+</body>
+</html>
