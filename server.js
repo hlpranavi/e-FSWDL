@@ -7,7 +7,7 @@ const crypto = require('crypto');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const MONGODB_URI = 'mongodb://localhost:27017/';
+const MONGODB_URI = 'give ur mgdb url';
 const DB_NAME = 'fswdl';
 
 app.use(bodyParser.json());
