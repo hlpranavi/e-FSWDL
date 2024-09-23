@@ -1,6 +1,6 @@
 const { MongoClient } = require('mongodb');
 
-const MONGODB_URI = 'mongodb://localhost:27017/';
+const MONGODB_URI = 'give ur mgdb url';
 const DB_NAME = 'fswdl';
 const FACULTY = [
     { "Faculty Name": "B.Radha", "username": "BRDH", "password": "brdh2" },
