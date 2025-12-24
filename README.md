@@ -4,16 +4,16 @@ e-FSWDL is an interactive web platform developed to streamline and digitize acce
 🚀 **Key Features**
 
 👨‍🎓 **Student Portal** <be>
-🔐 Login access restricted to their respective section only<br>
-📁 Access lab materials, assignments, and resources uploaded by faculty<br>
-📊 View internal and external lab marks by entering their roll number<br>
-📝 Download and reference lab experiments anytime, anywhere<br>
+1. Login access restricted to their respective section only<br>
+2. Access lab materials, assignments, and resources uploaded by faculty<br>
+3. View internal and external lab marks by entering their roll number<br>
+4. Download and reference lab experiments anytime, anywhere<br>
 
 👨‍🏫 **Faculty Portal**<br>
-🔐 Section-based login for faculty handling specific sections<br>
-📤 Upload and manage lab materials, circulars, and instructions<br>
-🧾 Enter and update student lab marks (internal/external)<br>
-🗂️ Maintain and track section-wise academic records<br>
+1. Section-based login for faculty handling specific sections<br>
+2. Upload and manage lab materials, circulars, and instructions<br>
+3. Enter and update student lab marks (internal/external)<br>
+4. Maintain and track section-wise academic records<br>
 
 🧠 **Platform Goals**<br>
 Centralize all FSWDL lab-related data and communication<br>
@@ -31,7 +31,7 @@ npm init -y <br>
 npm install <br>
 npm server.js <be>
 
-**Done By:**
+**Done By:** <br>
 Hari Lakshmi Pranavi <br>
 Geyasri Ganni<br>
 Keerthana Shakkari<br>
